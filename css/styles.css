@@ -1,0 +1,191 @@
+*{
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+body{
+  font-size: 1.5rem;
+  background-color:black;
+}
+
+.topheader h1 {
+  font-size: 5rem;
+  color: yellow;
+}
+
+.grid-item h1 {
+  font-size: 5rem;
+  color: yellow;
+}
+
+.bstyle h2{
+  font-size: 3rem;
+  color: yellow;
+  text-decoration: underline;
+}
+
+.myh2{
+  font-size: 3rem;
+  color: yellow;
+  text-decoration: underline;
+}
+
+
+a:hover {
+  background-color: yellow;
+}
+
+form{
+  method: get;
+  border:.75rem solid orange; 
+  max-width: 35%; 
+  padding: .5rem;
+}
+
+input.custom {
+  caret-color: blue;
+  color: blue;
+  background-color: gold;
+}
+
+button{
+  background-color:gold;
+  padding: .25rem .75rem;
+  border: none;
+  border-radius: .25rem;
+}
+
+.nav1 {
+  background-color: black;
+  text-align: center;
+}
+
+.modal1 {
+  background-color:black; 
+  color:orange;
+}
+
+.bottomleft {
+  display:inline;
+  width: 3rem;
+  height:auto;
+  float: left;
+  ;
+}
+
+.wrapper {
+  width: min(100% - 2rem, 1200px);
+  margin-inline: auto;
+  
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer"
+  ;
+  min-height: 80vh;
+  gap: 0.5rem;
+}
+
+.grid-item {
+  font-size: 1.5rem;
+  padding: .5rem;
+  background-color: black;
+  margin:0;
+}
+
+.header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+}
+.footer {
+  grid-area:footer;
+}
+
+.topheader {
+  background: url('https://cutewallpaper.org/27/best-wallpaper-for-gamers-sexy-anime/367621578.jpg');
+  color:yellow;
+  padding:1 rem; 
+  height:600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  background-color: black;
+}
+
+.featured-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+ 
+.link-cards {
+  min-height: calc(100vh - 300px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.card {
+  min-height: 30rem;
+  max-width: 20rem;
+}
+ 
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+
+.bstyle {
+  background-image: url('https://wallpaperaccess.com/full/218825.jpg'); 
+  padding:50px;
+  height:auto;
+  color:orange;
+}
+
+.fstyle {
+  color: yellow;
+  text-align: center;
+  position: relative;
+  left: 33%;
+}
+
+.img1 {
+  padding: 0 6px;
+  float: right;
+  width: 20%;
+}
+
+/*  Animations and media */
+
+.logo{
+  width: 50px;
+  height: auto;
+  cursor: pointer;
+  animation: bounce 5s linear 1;
+}
+
+@keyframes bounce {
+   0% {transform: translateY(-100);} 
+   30%, 60%, 100% {transform: translateY(0);} 
+   45% {transform: translateY(-50px);} 
+   75% {transform: translateY(-25px);} 
+} 
+
+
+
+@media (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+  
+ 
